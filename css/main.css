@@ -1,10 +1,10 @@
 html,body {
-	margin:0,0;
-   height:100%;
-   width:100%;
-   overflow:auto;
-   -webkit-overflow-scrolling:touch;
-   background-color:#111;
+  margin:0,0;
+  height:100%;
+  width:100%;
+  overflow:auto;
+  -webkit-overflow-scrolling:touch;
+  background-color:#111;
 	background-repeat:no-repeat;
 	background-size:cover;
 	background-attachment:fixed;
@@ -40,13 +40,13 @@ h1 {
 	left:50%;
 	transform:translate(-50%,50%);
 	-khtml-user-select:none;
-   -o-user-select:none;
-   -moz-user-select:none;
-   -webkit-user-select:none;
-   user-select:none;
-   overflow:hidden;
-   z-index:999;
-   -webkit-animation:fadeoutborder 0.5s;
+  -o-user-select:none;
+  -moz-user-select:none;
+  -webkit-user-select:none;
+  user-select:none;
+  overflow:hidden;
+  z-index:999;
+  -webkit-animation:fadeoutborder 0.5s;  
 	animation:fadeoutborder 0.5s;
 }
 
