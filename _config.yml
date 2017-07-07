@@ -1,0 +1,36 @@
+# Site Details
+title               : VKNG
+description         :
+url                 : "https://vkng.io"
+baseurl             : ""
+
+# Formatting
+markdown            : kramdown
+
+# Localization
+encoding            : UTF-8
+locale              : en_US
+lang                : en
+
+# Kramdown
+kramdown:
+  highlighter       : rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers  : false
+
+# Sass
+sass:
+  sass_dir          : _sass
+  style             : compressed
+
+# Particles
+particles:
+  cdn               : "https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"
+
+# Exclusions
+exclude:
+  - README.md
+  - .DS_Store
+  - CNAME
+  - LICENSE

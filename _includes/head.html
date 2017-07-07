@@ -1,0 +1,32 @@
+<head prefix="og: http://ogp.me/ns# website: http://ogp.me/ns/website#">
+
+	<!-- HEADERS -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta http-equiv="Cache-Control" content="max-age=86400, public" />
+  <meta http-equiv="Content-Encoding" content="gzip" />
+  <meta name="Content-Type" content="text/html; charset={{ site.encoding }}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+
+	<title>{{ site.title }}</title>
+
+	<!-- OPEN GRAPH -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ site.url }}" />
+  <meta property="og:title" content="{{ site.title }}" />
+  <meta property="og:site_name" content="{{ site.title }}" />
+  <meta property="og:locale" content="{{ site.locale }}" />
+
+	<!-- GOOGLE STRUCTURED DATA -->
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "{{ site.title }}",
+    "url": "{{ site.url }}"
+  }
+  </script>
+
+	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/styles.css" />
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Scheherazade|Megrim" />
+
+</head>
