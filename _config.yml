@@ -32,5 +32,4 @@ particles:
 exclude:
   - README.md
   - .DS_Store
-  - CNAME
   - LICENSE
