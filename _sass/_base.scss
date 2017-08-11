@@ -1,64 +1,49 @@
 html,
 body {
-  margin: 0,0;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
   -webkit-overflow-scrolling: touch;
+  background-attachment: fixed;
   background-color: $bg-color;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  height: 100%;
+  margin: 0,0;
+  overflow: hidden;
   position:fixed;
+  width: 100%;
 }
 
 h1 {
-  font-family: $title-font;
-  font-size: 2.5em;
-  font-weight: normal;
-  line-height: 0.5em;
-  color: $white;
-  background: $title-bg;
-  display: block;
-  margin: auto;
-  position: fixed;
-  padding-top: 13px;
-  padding-bottom: 11px;
-  padding-right: 5px;
-  padding-left: 7px;
-  border: 1px solid $white;
-  bottom: 50%;
-  left: 50%;
-  transform: translate(-50%,50%);
   -khtml-user-select: none;
   -o-user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
-  user-select: none;
+  background: $title-bg;
+  border: 1px solid $white;
+  bottom: 50%;
+  color: $white;
+  display: block;
+  font-family: $title-font;
+  font-size: 2.5em;
+  font-weight: normal;
+  left: 50%;
+  line-height: .5em;
+  margin: auto;
   overflow: hidden;
+  padding: 13px 5px 11px 7px;
+  position: fixed;
+  transform: translate(-50%,50%);
+  transition: padding 300ms ease-in-out;
+  user-select: none;
   z-index: 999;
-  -webkit-animation: fadeoutborder 0.5s;
-  animation: fadeoutborder 0.5s;
 
-	&:hover {
-  -webkit-animation: fadeinorder 0.5s;
-  animation: fadeinborder 0.5s;
-  border-bottom: 4px solid $white;
-  padding-bottom: 8px;
-	}
+  &:hover {
+    border-bottom: 4px solid $white;
+    padding: 13px 5px 8px 7px;
+    transition: padding 300ms ease-in-out;
+  }
 }
 
 a {
   text-decoration: none;
-	color: $white;
-}
-
-@keyframes fadeinborder {
-  0% { border-bottom: 1px solid $white; padding-bottom: 11px; }
-  100% { border-bottom: 4px solid $white; padding-bottom: 8px; }
-}
-
-@keyframes fadeoutborder {
-  0% { border-bottom: 4px solid $white; padding-bottom: 8px; }
-  100% { border-bottom: 1px solid $white; padding-bottom: 11px; }
+  color: $white;
 }
